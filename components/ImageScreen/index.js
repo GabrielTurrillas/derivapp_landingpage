@@ -4,14 +4,21 @@ import {
   containerMargin,
   backgroundColor
 } from '../../styles'
+import { Button } from '..'
 
 const ImageScreen = () => {
   return (
     <Background>
       <Container>
-        <ImageContainer>
-          <ImageB src='SiteSS.png' alt='Site Screen Shot' width={800} height={500} />
-        </ImageContainer>
+        <ButtonArea>
+          <Button type='primary'>VER DEMO ADMIN</Button>
+          <Button type='secondary'>VER DEMO USUARIO</Button>
+        </ButtonArea>
+        <ImageArea>
+          <ImageWrapper>
+            <ImageB src='/SiteSS.png' alt='Site Screen Shot' width={800} height={500} />
+          </ImageWrapper>
+        </ImageArea>
       </Container>
     </Background>
   );
@@ -21,28 +28,32 @@ export default ImageScreen;
 
 const Background = styled.div`
   background:${backgroundColor.primary};
-  position:absolute;
-  top:0;
-  right:0;
-  left:0;
-  bottom:0;
   width:100%;
-  height:100vh;
+  height:80vh;
   `
 
 const Container = styled.div`
-  display:flex;
-  flex-direction:column;
-  justify-content:start;
-  align-items:center;
+  display:grid;
   height:100%;
   margin: ${containerMargin.mobileS};
-  padding-top:3rem;
+  grid-template-rows: 1r 2fr;
+  grid-template-areas:'ButtonArea'
+                      'ImageArea';
 `
 
-const ImageContainer = styled.div`
-  width:fit-content;
+const ButtonArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+const ImageArea = styled.div`
+`
+
+const ImageWrapper = styled.div`
   height:fit-content;
+  width:fit-content;
 `
 
 const ImageB = styled(Image)`

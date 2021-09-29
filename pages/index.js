@@ -1,10 +1,14 @@
 import Head from 'next/head'
-import { Hero } from '../components'
+import {
+  Hero,
+  ImageScreen
+} from '../components'
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <ImageScreen />
     </>
   )
 }
