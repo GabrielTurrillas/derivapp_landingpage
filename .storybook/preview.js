@@ -1,5 +1,6 @@
 import * as NextImage from "next/image";
 import { viewportsSizes } from "../styles";
+import '../styles/globals.css'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
