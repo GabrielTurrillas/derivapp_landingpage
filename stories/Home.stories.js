@@ -1,11 +1,11 @@
 import Home from '../pages'
 
 export default {
-  title: '',
+  title: 'Page/Home',
   component: Home
 }
 
-const Template = () => <Home {...args} />
+const Template = (args) => <Home {...args} />
 
 export const Default = Template.bind({})
 
