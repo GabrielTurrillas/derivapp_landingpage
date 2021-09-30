@@ -6,4 +6,5 @@ export { default as Footer } from './Footer';
 //components
 export { default as ScrollIndicator } from './ScrollIndicator';
 export { default as Button } from './Button';
+export { default as Navbar } from './Navbar';
 
