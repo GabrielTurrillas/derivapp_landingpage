@@ -29,19 +29,20 @@ export default ImageScreen;
 const Background = styled.div`
   background:${backgroundColor.primary};
   width:100%;
-  height:80vh;
+  height:60vh;
 `
 
 const Container = styled.div`
   display:grid;
   height:100%;
   margin: ${containerMargin.mobileS};
-  grid-template-rows: 1r 2fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:'ButtonArea'
                       'ImageArea';
 `
 
 const ButtonArea = styled.div`
+  grid-area:ButtonArea;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,6 +50,7 @@ const ButtonArea = styled.div`
 `
 
 const ImageArea = styled.div`
+  grid-area:ImageArea;
 `
 
 const ImageWrapper = styled.div`
