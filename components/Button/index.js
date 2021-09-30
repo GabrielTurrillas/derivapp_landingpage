@@ -34,5 +34,6 @@ const A = styled.a`
   border:${({ type }) => type === 'primary' ? 'none' : type === 'secondary' ? '2px solid black' : 'none'};
   font-family: 'Share Tech Mono', monospace;
   font-size: 1.1rem;
+  margin:0 0.5rem;
   margin-bottom: 1rem;
 `

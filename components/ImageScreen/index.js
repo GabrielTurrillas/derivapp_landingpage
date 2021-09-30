@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import Image from 'next/image'
 import {
   containerMargin,
-  backgroundColor
+  backgroundColor,
+  device
 } from '../../styles'
 import { Button } from '..'
 
@@ -29,7 +30,7 @@ export default ImageScreen;
 const Background = styled.div`
   background:${backgroundColor.primary};
   width:100%;
-  height:60vh;
+  height:fit-content;
 `
 
 const Container = styled.div`
@@ -39,6 +40,9 @@ const Container = styled.div`
   grid-template-rows: 1fr 1fr;
   grid-template-areas:'ButtonArea'
                       'ImageArea';
+  @media ${device.mobileL} {
+    grid-template-rows: 1fr 2fr;
+  }
 `
 
 const ButtonArea = styled.div`
@@ -47,10 +51,17 @@ const ButtonArea = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media ${device.mobileL} {
+    flex-direction: row;
+  }
 `
 
 const ImageArea = styled.div`
   grid-area:ImageArea;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `
 
 const ImageWrapper = styled.div`
