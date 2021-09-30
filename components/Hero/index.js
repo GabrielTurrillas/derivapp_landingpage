@@ -54,7 +54,7 @@ const Container = styled.div`
 const ImageArea = styled.div`
   grid-area: ImageArea;
   display:flex;
-  align-items:center;
+  align-items:end;
   justify-content:center;
   height:100%;
   //background:red;

@@ -30,7 +30,7 @@ const Background = styled.div`
   background:${backgroundColor.primary};
   width:100%;
   height:80vh;
-  `
+`
 
 const Container = styled.div`
   display:grid;

@@ -4,7 +4,7 @@ import { backgroundColor } from '../../styles';
 const Footer = () => {
   return (
     <Background>
-      <Wave xmlns="http://www.w3.org/2000/svg" viewBox='0 -50 800 600'><path width='100%' fill='#000' fillOpacity='1' d="M 0 300 C 0 450 800 400 800 500 L 800 550 L 0 550 L 0 300 "></path></Wave>
+      <Svg viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M-1.13,-3.67 C-0.57,156.22 502.25,0.28 501.12,150.28 L501.12,152.27 L-4.52,154.23 Z"></path></Svg>
     </Background>
   );
 }
@@ -14,12 +14,18 @@ export default Footer;
 const Background = styled.div`
   display:flex;
   align-items:end;
-  height:20vh;
+  height: 150px;
   width:100%;
+  overflow: hidden;
   background-color: ${backgroundColor.primary};
 `
 
-const Wave = styled.svg`
+const Svg = styled.svg`
+  height:100%;
   width:100%;
-  background-color: ${backgroundColor.primary};
+`
+
+const Path = styled.path`
+  stroke: none; 
+  fill: #08f;
 `
