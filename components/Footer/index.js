@@ -16,7 +16,7 @@ const Background = styled.div`
   align-items:end;
   height:20vh;
   width:100%;
-  background: ${backgroundColor.primary};
+  background-color: ${backgroundColor.primary};
 `
 
 const Wave = styled.svg`
