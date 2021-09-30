@@ -88,9 +88,21 @@ const ScrollArea = styled.div`
 const H1 = styled.h1`
   font-family: 'Crimson Text', serif;
   font-size:1.7rem;
+  @media ${device.mobileL} {
+    font-size:2.5rem;
+  }
+  @media ${device.mobileL} {
+    font-size:3rem;
+  }
 `
 
 const H2 = styled.h2`
   font-family: 'Didact Gothic', sans-serif;
   font-size:1rem;
+  @media ${device.mobileL} {
+    font-size:1.2rem;
+  }
+  @media ${device.mobileL} {
+    font-size:1.4rem;
+  }
 `
