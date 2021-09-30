@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import {
   Hero,
-  ImageScreen
+  ImageScreen,
+  Footer
 } from '../components'
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <Hero />
       <ImageScreen />
+      <Footer />
     </>
   )
 }
