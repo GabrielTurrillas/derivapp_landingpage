@@ -3,7 +3,8 @@ import Image from 'next/image'
 import styled from 'styled-components'
 import {
   containerMargin,
-  backgroundColor
+  backgroundColor,
+  device
 } from '../../styles'
 import { ScrollIndicator } from '../'
 
@@ -45,6 +46,9 @@ const Container = styled.div`
                       'ScrollArea';
   height:100%;
   margin: ${containerMargin.mobileS};
+  @media ${device.mobileM}{
+    margin: ${containerMargin.mobileM};
+  }
 `
 
 const ImageArea = styled.div`
@@ -70,6 +74,7 @@ const SubtitleArea = styled.div`
   text-align:center;
   align-items:start;
   justify-content:center;
+  margin:0 2rem;
   //background:yellow;
 `
 
