@@ -21,4 +21,5 @@ const Background = styled.div`
 
 const Wave = styled.svg`
   width:100%;
+  background-color: ${backgroundColor.primary};
 `
