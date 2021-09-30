@@ -54,10 +54,10 @@ const Container = styled.div`
 const ImageArea = styled.div`
   grid-area: ImageArea;
   display:flex;
-  align-items:end;
+  align-items:flex-end;
   justify-content:center;
   height:100%;
-  background:red;
+  //background:red;
 `
 
 const TitleArea = styled.div`
@@ -66,7 +66,7 @@ const TitleArea = styled.div`
   align-items:center;
   justify-content:center;
   text-align:center;
-  background:blue;
+  //background:blue;
 `
 
 const SubtitleArea = styled.div`
