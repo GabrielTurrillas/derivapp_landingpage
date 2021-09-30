@@ -21,8 +21,18 @@ const Contaienr = styled.div`
   border-radius:50px;
 `
 const Center = styled.div`
+  position:relative;
   height:13px;
   width:9px;
   background:#757575;
   border-radius:50px;
+  animation-name: updown;
+  animation-duration:7s;
+  animation-iteration-count:infinite;
+  @keyframes updown {
+    0% {top:0px;}
+    80% {top:0px;}
+    90% {top:10px;}
+    100% {top:0px;}
+  }
 `
