@@ -31,8 +31,8 @@ const Center = styled.div`
   animation-iteration-count:infinite;
   @keyframes updown {
     0% {top:0px;}
-    80% {top:0px;}
-    90% {top:10px;}
+    10% {top:10px;}
+    20% {top:0px;}
     100% {top:0px;}
   }
 `
