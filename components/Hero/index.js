@@ -13,16 +13,18 @@ export default function Hero() {
     <>
       <Background>
         <Container>
-          <ImageContainer>
+          <ImageArea>
             <Image src='/hero_image.svg' alt='hero image' width={imageDimentions} height={imageDimentions} />
-          </ImageContainer>
-          <TitleContainer>
+          </ImageArea>
+          <TitleArea>
             <H1>Te ayudamos a administrar tu centro psicológico</H1>
-          </TitleContainer>
-          <SubtitleContainer>
+          </TitleArea>
+          <SubtitleArea>
             <H2>Diseñamos software al servicio de tus necesidades</H2>
-          </SubtitleContainer>
-          <ScrollIndicator />
+          </SubtitleArea>
+          <ScrollArea>
+            <ScrollIndicator />
+          </ScrollArea>
         </Container>
       </Background>
     </>
@@ -36,29 +38,46 @@ const Background = styled.div`
 `
 
 const Container = styled.div`
-  display:flex;
-  flex-direction:column;
-  justify-content:start;
-  align-items:center;
+  display:grid;
+  grid-template-areas:'ImageArea'
+                      'TitleArea'
+                      'SubtitleArea'
+                      'ScrollArea';
   height:100%;
   margin: ${containerMargin.mobileS};
-  padding-top:3rem;
 `
 
-const ImageContainer = styled.div`
-  width:fit-content;
-  height:fit-content;
+const ImageArea = styled.div`
+  grid-area: ImageArea;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  //background:red;
 `
 
-const TitleContainer = styled.div`
+const TitleArea = styled.div`
+  grid-area:TitleArea;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
-  margin:1rem 0;
+  //background:blue;
 `
 
-const SubtitleContainer = styled.div`
+const SubtitleArea = styled.div`
+  grid-area:SubtitleArea;
   text-align:center;
-  margin:0 2rem;
-  margin-bottom:1.5rem;
+  align-items:start;
+  justify-content:center;
+  //background:yellow;
+`
+
+const ScrollArea = styled.div`
+  grid-area: ScrollArea;
+  display: flex;
+  justify-content: center;
+  //background-color: green;
 `
 
 const H1 = styled.h1`
