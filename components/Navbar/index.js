@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import {
   widthSize,
   backgroundColor,
+  containerMargin,
+  device
 } from '../../styles';
 
 const Navbar = () => {
@@ -25,47 +27,51 @@ export default Navbar;
 const Nav = styled.nav`
   display:flex;
   width: 100%;
-  display: flex;
   justify-content:center;
   align-items:center;
   font-size: 1rem;
   position:absolute;
   top: 0;
-  z-index:999;
   //box-shadow: 0 8px 8px -4px black;
-  @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
-  }
 `;
 
 const NavbarContainer = styled.div`
   display:flex;
   justify-content: space-between;
-  height: 70px;
+  margin: ${containerMargin.mobileS};
+  padding:1rem 0;
   width: 100%;
-  padding: 0 24px;
-  max-width: 100%;
+  @media ${device.mobileM} {
+    margin: ${containerMargin.mobileM};
+  }
+  @media ${device.tablet} {
+    margin: ${containerMargin.tablet};
+  }
+  @media ${device.laptop} {
+    margin: ${containerMargin.laptop};
+  }
+  @media ${device.laptopL} {
+    margin: ${containerMargin.laptopL};
+  }
+  @media ${device.desktop} {
+    margin: ${containerMargin.desktop};
+  }
 `;
 
 const NavLogo = styled.a`
+  display: flex;
+  justify-self: flex-start;
   color: #000;
   font-family:'Didact Gothic', sans-serif;
-  justify-self: flex-start;
   cursor: pointer;
-  padding:0;
   font-size: 1.5rem;
-  display: flex;
   align-items: center;
   font-weight: bold;
   text-decoration: none;
+  margin-bottom:0.5rem;
 `;
 
 const MobileIcon = styled.div`
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-100%, 60%);
   font-size: 1.8rem;
   cursor: pointer;
   color: #000;

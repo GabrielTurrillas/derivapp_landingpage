@@ -49,8 +49,19 @@ const Container = styled.div`
   @media ${device.mobileM}{
     margin: ${containerMargin.mobileM};
   }
+  @media ${device.tablet}{
+    margin: ${containerMargin.tablet};
+  }
+  @media ${device.laptop}{
+    margin: ${containerMargin.laptop};
+  }
+  @media ${device.laptopL}{
+    margin: ${containerMargin.laptopL};
+  }
+  @media ${device.desktop}{
+    margin: ${containerMargin.desktop};
+  }
 `
-
 const ImageArea = styled.div`
   grid-area: ImageArea;
   display:flex;
