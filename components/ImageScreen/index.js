@@ -69,7 +69,7 @@ const ImageWrapper = styled.div`
   width:fit-content;
   `
 
-const ImageB = styled.img`
+const ImageB = styled(Image)`
   border-radius: 15px;
-  box-shadow: 0 10px 6px -6px #777;
+  //box-shadow: 0 10px 6px -6px #777;
 `
