@@ -67,8 +67,9 @@ const ImageArea = styled.div`
 const ImageWrapper = styled.div`
   height:fit-content;
   width:fit-content;
-`
+  `
 
-const ImageB = styled(Image)`
+const ImageB = styled.img`
   border-radius: 15px;
+  box-shadow: 0 10px 6px -6px #777;
 `

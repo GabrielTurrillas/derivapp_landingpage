@@ -7,4 +7,5 @@ export { default as Footer } from './Footer';
 export { default as ScrollIndicator } from './ScrollIndicator';
 export { default as Button } from './Button';
 export { default as Navbar } from './Navbar';
+export { default as Sidebar } from './Sidebar';
 
